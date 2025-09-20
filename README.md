@@ -23,15 +23,57 @@ The application is built using the Laravel framework. It uses a MySQL database f
 * Manage customers
 * Manage orders
 * Generate sales reports
+* API to mobile
 
 ## Installation
 
-To install the application, follow these steps:
+1. **Extract File Zip**
+    - Download file zip dari sumber yang disediakan.
+    - Extract file zip ke dalam direktori proyek Anda.
 
-1. Clone the repository from GitHub.
-2. Run the command `composer install` to install the dependencies.
-3. Run the command `php artisan migrate` to migrate the database.
-4. Run the command `php artisan db:seed` to seed the database with sample data.
+2. **Buka File Zip dengan Text Editor**
+    - Gunakan text editor pilihan Anda (contoh: VSCode, Sublime Text, atau Notepad++).
+    - Buka direktori proyek yang telah di extract.
+
+3. **Siapkan Database**
+    - Buat database baru di server database Anda (contoh: MySQL, PostgreSQL, atau SQLite).
+
+4. **Jalankan `cp .env.example .env`, lalu Masukkan Konfigurasi Database**
+    - Salin file `.env.example` menjadi `.env`.
+    - Buka file `.env` dan masukkan informasi konfigurasi database Anda.
+
+5. **Jalankan `composer update`**
+    - Jalankan perintah `composer update` untuk menginstal semua dependensi yang diperlukan.
+
+6. **Jalankan `php artisan key:generate`**
+    - Jalankan perintah `php artisan key:generate` untuk menghasilkan kunci aplikasi.
+
+7. **Jalankan `php artisan migrate`**
+    - Jalankan perintah `php artisan migrate` untuk membuat tabel-tabel di database.
+
+8. **Jalankan `php artisan make:filament-user`, lalu Masukkan Informasi User**
+    - Jalankan perintah `php artisan make:filament-user` dan masukkan informasi pengguna yang diminta.
+    ```
+        Name:
+        ❯ Super Admin
+
+        Email address:
+        ❯ admin@mahdev.com
+
+        Password:
+        ❯qwerty123
+    ```
+    -`INFO`
+    - Success! admin@mahdev.com may now log in at http://localhost/admin/login.
+
+9. **Jalankan `php artisan serve`, Buka Web di URL `/admin`**
+    - Jalankan perintah `php artisan serve`.
+    - Buka browser dan akses `http://localhost:8000/admin`.
+
+10. **Project Siap Digunakan**
+    - Proyek Laravel Anda sekarang siap digunakan.
+
+Project siap digunakan
 
 ## Development
 
@@ -46,7 +88,6 @@ To contribute to the development of the application, follow these steps:
 
 ## Testing
 
-To test the application, follow these steps:
-
-1. Run the command `php artisan test` to run the unit tests.
-2. Run the command `php artisan test --coverage` to run the unit tests with code coverage.
+**Jalankan `php artisan serve`, Buka Web di URL `/admin`**
+    - Jalankan perintah `php artisan serve`.
+    - Buka browser dan akses `http://localhost:8000/admin`.
