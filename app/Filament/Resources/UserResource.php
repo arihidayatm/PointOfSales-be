@@ -64,7 +64,6 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('roles')
                     ->searchable(),
 
-
             ])
             ->filters([
                 //
