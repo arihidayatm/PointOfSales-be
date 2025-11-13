@@ -23,5 +23,7 @@ class DatabaseSeeder extends Seeder
         // Call the CategorySeeder to seed categories
         $this->call(CategorySeeder::class);
         $this->call(UserSeeder::class);
+        // Register OrdersSeeder (same namespace) correctly
+        $this->call(OrdersSeeder::class);
     }
 }
